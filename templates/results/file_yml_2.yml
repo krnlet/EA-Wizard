@@ -1,0 +1,61 @@
+prefixes:
+  eao: http://eaontology.linkeddata.es/def/
+  ebocaev: https://w3id.org/eboca/evidences#
+  owl: http://www.w3.org/2002/07/owl#
+  dc: http://purl.org/dc/terms/
+  foaf: http://xmlns.com/foaf/0.1/
+  prov: http://www.w3.org/ns/prov#
+  modsci: https://w3id.org/skgo/modsci#
+  pmlp: http://inference-web.org/2.0/pml-provenance.owl#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  pav: http://purl.org/pav/
+mappings:
+  technology:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results1.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/eao#$(technology_level)
+      po:
+          - [a, modsci:TechnologyLevel]
+          - [eao:description, $(technology_level)]
+  artefact:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results1.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/eao#$(artefact_level)
+      po:
+          - [a, eao:ArtefactLevel]
+          - [eao:description, $(artefact_level)]
+  app:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results1.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/eao#$(app_level)
+      po:
+          - [a, eao:app_level]
+          - [eao:description, $(app_level)]
+  eval:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results1.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/eao#$(evaluation)
+      po:
+          - [a, eao:EthicalEvaluation]
+          - [eao:description, $(evaluation)]
+  issue:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results1.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/eao#$(ethical_issue)
+      po:
+          - [a, eao:EthicalIssue]
+          - [eao:description, $(ethical_issue)]
+  benefit:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results1.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/eao#$(benefit)
+      po:
+          - [a, eao:Benefit]
+          - [eao:description, $(benefit)]
+  negative:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results1.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/eao#$(negative)
+      po:
+          - [a, eao:NegativeImplication]
+          - [eao:description, $(negative)]

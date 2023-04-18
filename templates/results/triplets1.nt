@@ -1,0 +1,54 @@
+<https://eaontology.linkeddata.es/def/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/skgo/modsci#Technology>.
+<https://eaontology.linkeddata.es/def/11> <http://purl.org/pav/version> "first".
+<https://eaontology.linkeddata.es/def/11> <http://eaontology.linkeddata.es/def/purpose> "Education".
+<https://eaontology.linkeddata.es/def/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/skgo/modsci#Technology>.
+<https://eaontology.linkeddata.es/def/11> <http://purl.org/pav/version> "first".
+<https://eaontology.linkeddata.es/def/11> <http://eaontology.linkeddata.es/def/purpose> "Education".
+<https://eaontology.linkeddata.es/def/Personalized%20learning%20system> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/skgo/modsci#Technology>.
+<https://eaontology.linkeddata.es/def/Personalized%20learning%20system> <http://purl.org/pav/version> "first".
+<https://eaontology.linkeddata.es/def/Personalized%20learning%20system> <http://eaontology.linkeddata.es/def/purpose> "Education".
+<https://eaontology.linkeddata.es/def/Personalized%20Learning%20system> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/skgo/modsci#Technology>.
+<https://eaontology.linkeddata.es/def/Personalized%20Learning%20system> <http://purl.org/pav/version> "first".
+<https://eaontology.linkeddata.es/def/Personalized%20Learning%20system> <http://eaontology.linkeddata.es/def/purpose> "Education".
+<https://eaontology.linkeddata.es/def/PLS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/skgo/modsci#Technology>.
+<https://eaontology.linkeddata.es/def/PLS> <http://purl.org/pav/version> "first".
+<https://eaontology.linkeddata.es/def/PLS> <http://eaontology.linkeddata.es/def/purpose> "Education".
+<https://eaontology.linkeddata.es/def/plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/skgo/modsci#Technology>.
+<https://eaontology.linkeddata.es/def/plan> <http://purl.org/pav/version> "first".
+<https://eaontology.linkeddata.es/def/plan> <http://eaontology.linkeddata.es/def/purpose> "Education".
+<https://eaontology.linkeddata.es/def/Data%20driven%20approach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://eaontology.linkeddata.es/def/Technique>.
+<https://eaontology.linkeddata.es/def/Data%20driven%20approach> <http://eaontology.linkeddata.es/def/especificActivity> "Adjust the path and pace of learning".
+<https://eaontology.linkeddata.es/def/Data%20driven%20approach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://eaontology.linkeddata.es/def/Technique>.
+<https://eaontology.linkeddata.es/def/Data%20driven%20approach> <http://eaontology.linkeddata.es/def/especificActivity> "Adjust the path and pace of learning".
+<https://eaontology.linkeddata.es/def/Data%20driven%20approach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://eaontology.linkeddata.es/def/Technique>.
+<https://eaontology.linkeddata.es/def/Data%20driven%20approach> <http://eaontology.linkeddata.es/def/especificActivity> "Adjust the path and pace of learning".
+<https://eaontology.linkeddata.es/def/Data%20driven%20approach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://eaontology.linkeddata.es/def/Technique>.
+<https://eaontology.linkeddata.es/def/Data%20driven%20approach> <http://eaontology.linkeddata.es/def/especificActivity> "Adjust the path and pace of learning".
+<https://eaontology.linkeddata.es/def/Data%20driven%20approach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://eaontology.linkeddata.es/def/Technique>.
+<https://eaontology.linkeddata.es/def/Data%20driven%20approach> <http://eaontology.linkeddata.es/def/especificActivity> "Adjust the path and pace of learning".
+<https://eaontology.linkeddata.es/def/Data%20driven%20approach> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://eaontology.linkeddata.es/def/Technique>.
+<https://eaontology.linkeddata.es/def/Data%20driven%20approach> <http://eaontology.linkeddata.es/def/especificActivity> "Adjust the path and pace of learning".
+<https://eaontology.linkeddata.es/def/Resource%20limitations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://eaontology.linkeddata.es/def/feature>.
+<https://eaontology.linkeddata.es/def/Resource%20limitations> <http://eaontology.linkeddata.es/def/formalFeature> "Resource limitations".
+<https://eaontology.linkeddata.es/def/Resource%20limitations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://eaontology.linkeddata.es/def/feature>.
+<https://eaontology.linkeddata.es/def/Resource%20limitations> <http://eaontology.linkeddata.es/def/formalFeature> "Resource limitations".
+<https://eaontology.linkeddata.es/def/Resource%20limitations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://eaontology.linkeddata.es/def/feature>.
+<https://eaontology.linkeddata.es/def/Resource%20limitations> <http://eaontology.linkeddata.es/def/formalFeature> "Resource limitations".
+<https://eaontology.linkeddata.es/def/Resource%20limitations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://eaontology.linkeddata.es/def/feature>.
+<https://eaontology.linkeddata.es/def/Resource%20limitations> <http://eaontology.linkeddata.es/def/formalFeature> "Resource limitations".
+<https://eaontology.linkeddata.es/def/Resource%20limitations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://eaontology.linkeddata.es/def/feature>.
+<https://eaontology.linkeddata.es/def/Resource%20limitations> <http://eaontology.linkeddata.es/def/formalFeature> "Resource limitations".
+<https://eaontology.linkeddata.es/def/Resource%20limitations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://eaontology.linkeddata.es/def/feature>.
+<https://eaontology.linkeddata.es/def/Resource%20limitations> <http://eaontology.linkeddata.es/def/formalFeature> "Resource limitations".
+<https://eaontology.linkeddata.es/def/Students> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Group>.
+<https://eaontology.linkeddata.es/def/Students> <http://purl.org/dc/terms/identifier> "Students".
+<https://eaontology.linkeddata.es/def/Students> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Group>.
+<https://eaontology.linkeddata.es/def/Students> <http://purl.org/dc/terms/identifier> "Students".
+<https://eaontology.linkeddata.es/def/Students> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Group>.
+<https://eaontology.linkeddata.es/def/Students> <http://purl.org/dc/terms/identifier> "Students".
+<https://eaontology.linkeddata.es/def/Students> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Group>.
+<https://eaontology.linkeddata.es/def/Students> <http://purl.org/dc/terms/identifier> "Students".
+<https://eaontology.linkeddata.es/def/Students> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Group>.
+<https://eaontology.linkeddata.es/def/Students> <http://purl.org/dc/terms/identifier> "Students".
+<https://eaontology.linkeddata.es/def/Students> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Group>.
+<https://eaontology.linkeddata.es/def/Students> <http://purl.org/dc/terms/identifier> "Students".

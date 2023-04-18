@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "wizard",
+			"path": ".."
+		},
+		{
+			"name": "personal",
+			"path": "../../../Downloads/personal"
+		}
+	],
+	"settings": {}
+}

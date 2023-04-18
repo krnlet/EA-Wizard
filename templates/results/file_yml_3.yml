@@ -1,0 +1,69 @@
+prefixes:
+  eao: http://eaontology.linkeddata.es/def/
+  ebocaev: https://w3id.org/eboca/evidences#
+  owl: http://www.w3.org/2002/07/owl#
+  dc: http://purl.org/dc/terms/
+  foaf: http://xmlns.com/foaf/0.1/
+  prov: http://www.w3.org/ns/prov#
+  modsci: https://w3id.org/skgo/modsci#
+  pmlp: http://inference-web.org/2.0/pml-provenance.owl#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  pav: http://purl.org/pav/
+mappings:
+  feasability:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results2.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/$(feasability)
+      po:
+          - [a, eao:TechnologyFeasability]
+          - [eao:description, $(feasability)]
+  usability:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results2.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/$usability)
+      po:
+          - [a, eao:SocialUsability]
+          - [eao:description, $(usability)]
+  desirability:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results2.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/$(desirability)
+      po:
+          - [a, eao:ArtefactLevel]
+          - [eao:description, $(desirability)]
+  expectation:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results2.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/$(expectation)
+      po:
+          - [a, eao:expectation]
+          - [eao:description, $(expectation)]
+  evidence:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results2.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/$(evidence)
+      po:
+          - [a, ebocaev:evidence]
+          - [pav:createdOn, $(evidence)]
+  source:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results2.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/$(source)
+      po:
+          - [a, pmlp:source]
+          - [rdfs:seeAlso, $(source)]
+  agent:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results2.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/$(agent)
+      po:
+          - [a, prov:Agent]
+          - [foaf:givenName, $(agent)]
+          - [foaf:mbox, $(emailagent)]
+  exp_ev:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results2.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/$(ethical_issue)
+      po:
+          - [a, eao:ExpectationEvaluation]
+          - [eao:description, $(ethical_issue)]

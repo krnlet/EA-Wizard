@@ -1,0 +1,41 @@
+prefixes:
+  eao: http://eaontology.linkeddata.es/def/
+  ebocaev: https://w3id.org/eboca/evidences#
+  owl: http://www.w3.org/2002/07/owl#
+  dc: http://purl.org/dc/terms/
+  foaf: http://xmlns.com/foaf/0.1/
+  prov: http://www.w3.org/ns/prov#
+  modsci: https://w3id.org/skgo/modsci#
+  pmlp: http://inference-web.org/2.0/pml-provenance.owl#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  pav: http://purl.org/pav/
+mappings:
+  technology:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/$(technology_name)
+      po:
+          - [a, modsci:Technology]
+          - [pav:version, $(technology_version)]
+          - [eao:purpose, $(technology_purpose)]
+  technique:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/$(technique)
+      po:
+          - [a, eao:Technique]
+          - [eao:especificActivity, $(task_of_technique)]
+  feature:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/$(feature)
+      po:
+          - [a, eao:feature]
+          - [eao:formalFeature, $(feature)]
+  users:
+      sources:
+          - ["/Users/krnlet/Desktop/wizard/results.csv~csv"]
+      s: https://eaontology.linkeddata.es/def/$(users)
+      po:
+          - [a, foaf:Group]
+          - [dc:identifier, $(users)]

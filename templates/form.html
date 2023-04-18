@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wizard</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel= "stylesheet" href= "{{ url_for('static',filename='/static/css/bd-wizard.css') }}">
+  <link rel= "stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel= "stylesheet" href= "https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+<script>
+  $('#techniques2').click(function(){
+  $('.text_box').show();
+});
+
+$('#techniques1').click(function(){
+  $('.text_box').hide();
+  $('.text_box').val("");
+});
+</script>
+
+</head>
+<body>
+
+  
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="{{ url_for('static',filename='/static/images/logo.svg')}}" alt="logo"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://eaontology.linkeddata.es/def/">Ontology</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('static',filename='/personal/index.html')}}">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Example</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="d-flex align-items-center">
+    <div class="container">
+        <div id="wizard">
+          <h3>Step 1 Title</h3>
+          <section>
+           <h5 class="bd-wizard-step-title"></h5>
+           <h2 class="section-heading">Ethical Assessment  </h2>
+           <p>Ethical assessment comprises a set of approaches to examine and evaluate technological advancements from an ethical perspective, specifically, the potentially negative impact that technologies might have on individuals, society and the environment.
+             <br>EA-Wizard is divided in three parts, each one with simple questions to then get a document with triplets and that our ontology helps us at times.
+           </p>
+           <div class="purpose-radios-wrapper">
+            <div class="purpose-radio">
+              <input type="radio" name="purpose" id="branding" class="purpose-radio-input" value="Branding" checked>
+             <label for="branding" class="purpose-radio-label">
+               <span class="label-icon">
+                <center>
+                  <img src="{{ url_for('static',filename='/static/images/ordenador-portatil-off.png')}}" width="20%" alt="branding" class="label-icon-default">
+                 <img src="{{ url_for('static',filename='/static/images/ordenador-portatil.png')}}" width="20%" alt="branding" class="label-icon-active">
+               </center>
+               </span>
+               <span class="label-text">Technology</span>
+             </label>
+            </div>
+            <div class="purpose-radio">
+              <input type="radio" name="purpose" id="web-design" class="purpose-radio-input" value="Web Design">
+             <label for="web-design" class="purpose-radio-label">
+               <span class="label-icon">
+                <center>
+                  <img src="{{ url_for('static',filename='/static/images/expectation.png')}}" width="20%" alt="branding" class="label-icon-default">
+                  <img src="{{ url_for('static',filename='/static/images/expectation-on.png')}}" width="20%" alt="branding" class="label-icon-active">
+                </center>
+                </span>
+                <span class="label-text">Analysis Expectations</span>
+             </label>
+            </div>
+              
+                <div class="purpose-radio">
+                   <input type="radio" name="purpose" id="mobile-design" class="purpose-radio-input" value="Mobile Design">
+                  <label for="mobile-design" class="purpose-radio-label">
+                    <span class="label-icon">
+                      <center>
+                        <img src="{{ url_for('static',filename='/static/images/scale-off.png')}}" width="20%" alt="branding" class="label-icon-default">
+                        <img src="{{ url_for('static',filename='/static/images/scale.png')}}" width="20%" alt="branding" class="label-icon-active">
+                      </center>
+                      </span>
+                      <span class="label-text">Ethical Analysis</span>
+                      
+                  </label>
+                  
+                 </div>
+                 
+                  
+                
+           </div>
+           
+          </section>
+        
+          <h3>Step 2 Title</h3>
+          <section>
+            <h5 class="bd-wizard-step-title">(Part 1)</h5>
+            <h2 class="section-heading">Technology</h2>
+            <p>Technology Information. 
+              <br>This part is to get the information about the technology evaluated.
+              <br>
+              <br>
+            </p>
+            <form action="{{ url_for("gfg")}}" method="post">
+            <div class="form-group">
+              <label>Name of evaluated Technology</label>
+              <div class="wrap-trexto" title="Personalized Learning system">
+                <input type="text" name="name" id="name"  class="form-control" placeholder="Example: Personalized Learning system">
+              </div>
+            </div>
+            <div class="form-group">
+              <label> Which is the version of this Technology?</label>
+              <div id="columna3">
+                <select name="version" id="version"  class="form-control_peque" >
+                <option value="first">First</option>
+                <option value="general">General</option>
+                <option value="other">Other</option>
+                </select>
+              </div>
+              <br>
+              <div id="columna4">
+                <input type="text" name="version_other"  class="form-control" placeholder="Other (write specifc version)" ></textarea>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label> Which is the purpose of this Technology?</label>
+              <div id="columna3">
+                <select name="purpose" id="purpose"  class="form-control_peque" >
+                <option value="Education">Education</option>
+                <option value="Life_style">Life style</option>
+                <option value="other">Other</option>
+                </select>
+              </div>
+              <br>
+              <div id="columna4">
+                <input type="text" name="purpose_other"  class="form-control" placeholder="Other (write specifc version)" ></textarea>
+              </div>
+            </div>
+          
+            <div class="form-group" >
+              <label>What kind of Techniques contain of the Technology?</label>
+              <div id="columna3">
+                <select name="techniques" id="techniques"  class="form-control_peque" >
+                  <option value="Data driven approach">Data driven approach</option>
+                  <option value="general"></option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <br>
+              <div id="columna4">
+                <textarea rows="3" name="techniques_other"  class="form-control" placeholder="Other (write specifc technique)" ></textarea>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>What is the main task of these techniques?</label>
+              <div id="columna3">
+              <select name="task_tech" id="task_tech"  class="form-control_peque" >
+                <option value="Adjust the path and pace of learning">Adjust the path and pace of learning</option>
+                <option value="general"></option>
+                <option value="other">Other</option>
+              </select>
+              </div>
+              <br>
+              <br>
+              <br>
+              
+              <textarea rows="3" name="tt_other"  class="form-control" placeholder="Other (write specifc task of technique)" ></textarea>
+              
+            </div>
+            <div class="form-group">
+              <label>Which are the main features of the Technology?</label>
+              <div id="columna3">
+              <select name="features" id="features"  class="form-control_peque" >
+                <option value="Resource limitations">Resource limitations</option>
+                <option value="general"></option>
+                <option value="other">Other</option>
+              </select>
+              </div>
+              <br>
+              <div id="columna4">
+              <textarea rows="3" name="features_other"  class="form-control" placeholder="Other (write specifc task of features)" ></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Who are users of the Technology?</label>
+              <div id="columna3">
+              <select name="users" id="users"  class="form-control_peque" >
+                <option value="Students">Students</option>
+                <option value="general"></option>
+                <option value="other">Other</option>
+              </select>
+              </div>
+              <br>
+              <div id="columna4">
+              <input type="text" name="users_other"  class="form-control" placeholder="Other (write specifc task of features)" />
+              
+            </div>
+
+            <button type="submit">Save</button> 
+           
+            <a class="navbar-brand" href="{{ url_for("instances")}}"><img src="{{ url_for('static',filename='/static/images/create.png')}}" alt="logo"></a>
+            <br>
+           
+              
+            <br>
+            <br>
+            </form>
+           
+          </section>
+          <h3>Step 3 Title</h3>
+          <section>
+              <h5 class="bd-wizard-step-title">(Part 2)</h5>
+              <h2 class="section-heading mb-5">Ethical Analysis (ATE approach)</h2>
+              <form action="{{ url_for("gfg")}}" method="post">
+              <div class="form-group">
+                <p>If you create an Ethical assessment by levels, write about your findings:
+                </p>
+              </div>
+              <div class="form-group">
+                <div id="columna1">
+                  <textarea rows="7" name="tl" id="tl"  class="form-control" placeholder="Technology Level (According of features in technology)"></textarea></div>
+                <div id="columna2">EXAMPLE <BR>Genetic engineering involves
+                  the manipulation of DNA in cells and organisms.
+                  This is a defining feature of the technology. At the
+                  technology level, a generic ethical issue is whether
+                  such manipulation violates natural order or the dignity (Example taken by Brey, 2012)
+                  of life.</div>
+              </div>
+              <br>
+              <div class="form-group">
+                <div id="columna1">
+                <textarea rows="7" name="al"  id="al" class="form-control" placeholder="Artefact Level (According to features about artefacts and process)"></textarea></div>
+                <div id="columna2">EXAMPLE <BR>Video
+                  games that contain depictions degrading to human
+                  beings, automobiles that produce greenhouse gasses,
+                  smartphones that store and disseminate location data
+                  of users (Example taken by Brey, 2012)</div>
+              </div>
+              <br>
+              <div class="form-group">
+                <div id="columna1">
+                  <textarea rows="7" name="appl" id="appl" class="form-control" placeholder="Application Level (According to moral issues about intended use of artifact) "></textarea></div>
+                  <div id="columna2">EXAMPLE <BR>Moral
+                    issues may be raised by the use of in vitro fertilization
+                    for impregnating older women, the use of morphine
+                    for mercy killing, or the unauthorized use or dissemination
+                    of proprietary software (Example taken by Brey, 2012)</div>
+              </div>
+              <br>
+
+              <div class="form-group">
+                <br>
+                <p>In your Ethical Evaluation:<a class="navbar-brand" href="{{ url_for('static',filename='/static/images/Ethical list.png')}}"><img src="{{ url_for('static',filename='/static/images/taxonomy.png')}}" width="10%" alt="branding" class="label-icon-default">
+                </a></p>
+                <br>
+                <p>Foresight Analysis is the part where the predictions about the technology are searched and is possible to identify ethical issues through literature review or existing studies.  </p>
+                
+                <br>
+                <div class="form-group">
+                  <label>Could you describe the evaluation obtained by Foresight analysis?</label>
+                  <div class="wrap-trexto" title="Personalized Learning system">
+                    <input type="text" name="fores" id="fores"  class="form-control" placeholder="Example:">
+                  </div>
+                  <br>
+                </div>
+
+
+                <label> What ethical issues have you identified? (you can see the ethical list if select the image)</label>
+                <div id="columna3">
+              <select name="issue" id="issue"  class="form-control_peque" >
+                <option value="Psychological harm">Psychological harm</option>
+                <option value="Bodily harm">Bodily harm</option>
+                <option value="Health harm">Health harm</option>
+                <option value="Physical harm">Physical harm</option>
+                <option value="Enviromental harm">Environmental harm</option>
+                <option value="Social Harm">Social Harm</option>
+                <option value="Fredom">Freedom</option>
+                <option value="Autonomy">Autonomy</option>
+                <option value="Human dignity">Human dignity</option>
+                <option value="Privacy">Privacy</option>
+                <option value="Property">Property</option>
+                <option value="Capabilities">Capabilities</option>
+                <option value="Global justice">Global justice</option>
+                <option value="Intergerational justice">Intergenerational justice</option>
+                <option value="Supportive of culture">Supportive of culture</option>
+
+                <option value="other">Other</option>
+              </select>
+                </div>
+                <br>
+                <br>
+                <br>
+              </div>
+              <div class="form-group">
+                <label>What were the benefits of the ethical evaluation? </label>
+                <div id="columna3">
+                <select name="benefits" id="benefits"  class="form-control_peque" >
+                  <option value="Enable various learning speds">Enable various learning speeds</option>
+                  <option value="other">Other</option>
+                </select>
+                </div>
+                <br>
+                <br>
+                <br>
+                <input type="text" name="benefits_other"  class="form-control" placeholder="Other (write specifc task of features)" />
+               
+              </div>
+
+              <div class="form-group">
+                <label>What was the Negative Implication about the ethical evaluation?</label>
+                <div id="columna3">
+                <select name="negative" id="negative"  class="form-control_peque" >
+                  <option value="Enable various learning speds">Lead to feelings of isolation</option>
+                  <option value="other">Other</option>
+                </select>
+                </div>
+                <br>
+                <br>
+                <br>
+                <input type="text" name="negative_other"  class="form-control" placeholder="Other (write specifc task of features)" />
+                
+              </div>
+
+              <button type="submit">Save</button> 
+             
+             
+           
+            <a class="navbar-brand" href="{{ url_for("instances2")}}"><img src="{{ url_for('static',filename='/static/images/create.png')}}" alt="logo"></a>
+          </form>
+          </section>
+
+          <h3>Step 3 Title</h3>
+          <section>
+              <h5 class="bd-wizard-step-title">(Part 3)</h5>
+              <h2 class="section-heading mb-5">Expectation Analysis</h2>
+              <form action="{{ url_for("gfg")}}" method="post">
+              <div class="form-group">
+
+                <p>If you create an Ethical assessment by expectations, write about your findings:
+                </p>
+
+                <div class="form-group">
+                  <div id="columna1">
+                    <textarea rows="7" name="tf" id="tf" class="form-control" placeholder="Did you identify Technology feasibility?"></textarea></div>
+                    <div id="columna2">EXAMPLE Technology Feasibility.  <BR>Expectations about features and functioning of the Technology </div>
+                </div>
+                <br>
+              </div>
+              <div class="form-group">
+                <div id="columna1">
+                  <textarea rows="7" name="su" id="su" class="form-control" placeholder="Did you identify Social usability?"></textarea></div>
+                  <div id="columna2">EXAMPLE Social usability. <BR>Expectations about how the technology will be adopted by the intended users and how it will be integrated in current practice </div>
+              </div>
+              <br>
+              <div class="form-group">
+                <div id="columna1">
+                  <textarea rows="7" name="de" id="de" class="form-control" placeholder="Did you identify Desirability?"></textarea></div>
+                  <div id="columna2">EXAMPLE Desirability <br> Expectations about how technology will address a social problem or need</div>
+              </div>
+              <br>
+              <div class="form-group">
+                <p>Write about the expectation: 
+                </p>
+                <input type="text" name="expectation"  id="expectation" class="form-control" placeholder="Example: The expectation found was, Improvement in student performance ">
+              </div>
+              <div class="form-group">
+                <p>Write about the expectation that support the expectation (evidence), exactly the date of when was got:
+                </p>
+                <input type="text" name="evidence"  id="evidence" class="form-control" placeholder="Created on 2016 in a website">
+              </div>
+              <div class="form-group">
+                <p>Write the source where you found the expectation:
+                </p>
+                <input type="text" name="source"  id="source" class="form-control" placeholder="Example: https://edtechmagazine.com/higher/article/2019/11/colleges-see-equity-success-adaptive-learning-systems (2019)">
+              </div>
+
+              <div class="form-group">
+                <p>Who created the expectation:
+                </p>
+                <input type="text" name="agent"  id="agent" class="form-control" placeholder="Name of the person">
+                <br>
+                <br>
+                <input type="text" name="emailagent"  id="emailagent" class="form-control" placeholder="Email of person">
+              </div>
+              
+              
+              <label> What ethical issues have you identified? (you can see the ethical list if select the image)</label>
+              <div id="columna3">
+              <select name="issue2" id="issue2"  class="form-control_peque" >
+                <option value="Psychological harm">Psychological harm</option>
+                <option value="Bodily harm">Bodily harm</option>
+                <option value="Health harm">Health harm</option>
+                <option value="Physical harm">Physical harm</option>
+                <option value="Enviromental harm">Environmental harm</option>
+                <option value="Social Harm">Social Harm</option>
+                <option value="Fredom">Freedom</option>
+                <option value="Autonomy">Autonomy</option>
+                <option value="Human dignity">Human dignity</option>
+                <option value="Privacy">Privacy</option>
+                <option value="Property">Property</option>
+                <option value="Capabilities">Capabilities</option>
+                <option value="Global justice">Global justice</option>
+                <option value="Intergerational justice">Intergenerational justice</option>
+                <option value="Supportive of culture">Supportive of culture</option>
+
+                <option value="other">Other</option>
+              </select>
+              </div>
+
+              <br>
+              <br>
+              <br>
+              <br>
+
+              <button type="submit">Save</button> 
+             
+             
+           
+            <a class="navbar-brand" href="{{ url_for("instances3")}}"><img src="{{ url_for('static',filename='/static/images/create.png')}}" alt="logo"></a>
+          </form>
+              
+          </section>
+
+          
+        
+        </div>
+        <br>
+        <br>
+        <span class="label-text"><br><br>
+          <br>This work has received funding from the EU’s Horizon 2020 Research and Innovation programme through the contracts Marie Sklodowska-Curie PROTECT (grant agreement No. 813497).
+          <br>
+          Authors: With love by Researcher Karen Vazquez :)<br><br><br> </span>
+    </div>
+    
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="{{ url_for('static',filename='/static/js/jquery.steps.min.js')}}"></script>
+  <script src="{{ url_for('static',filename='/static/js/bd-wizard.js')}}"></script>
+</body>
+</html>
+
+  
