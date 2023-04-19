@@ -3,5 +3,4 @@ EA-Wizard is a questionnaire (with as many multiple-choice questions as possible
 
 https://eawizard.oeg.fi.upm.es
 
-# Contact: 
-This ontology is created and maintained by Karen Leticia Vazquez Flores PhD Researcher OEG, Universidad Politecnica de Madrid, Madrid, España karenleticia.vazquez@upm.es
+Contact: This ontology is created and maintained by Karen Leticia Vazquez Flores PhD Researcher OEG, Universidad Politecnica de Madrid, Madrid, España karenleticia.vazquez@upm.es
